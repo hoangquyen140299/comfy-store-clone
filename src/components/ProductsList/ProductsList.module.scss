@@ -1,0 +1,108 @@
+.wrapper {
+   display: grid;
+   gap: 32px;
+   margin-top: 48px;
+}
+
+.cardItem {
+   padding: 32px;
+   border-radius: 16px;
+   background-color: transparent;
+
+   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+   &:hover {
+      transition: duration 0.3s;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+      --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+         var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+   }
+
+   &:hover img {
+      scale: 1.05;
+      // --tw-rotate: 0;
+      // --tw-translate-x: 0;
+      // --tw-translate-y: 0;
+      // --tw-scale-x: 1.05;
+      // --tw-scale-y: 1.05;
+      // --tw-skew-x: 0;
+      // --tw-skew-y: 0;
+      // transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      //   rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      //   scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+   }
+}
+
+.card {
+   display: flex;
+   row-gap: 16px;
+   flex-direction: column;
+
+   img {
+      width: 128px;
+      height: 128px;
+      -o-object-fit: cover;
+      object-fit: cover;
+      border-radius: 8px;
+   }
+}
+
+.cardBody {
+   h2 {
+      font-size: 1.8rem;
+      text-transform: capitalize;
+      font-weight: 500;
+   }
+
+   h4 {
+      font-size: 1.6rem;
+      font-weight: 400;
+      text-align: left;
+      color: #c7c9d1;
+   }
+}
+
+.price {
+   display: block;
+   font-size: 1.6rem;
+   font-weight: 600;
+}
+
+@media (min-width: 640px) {
+   .card {
+      display: flex;
+      flex-direction: row;
+
+      img {
+         width: 128px;
+         height: 128px;
+         -o-object-fit: cover;
+         object-fit: cover;
+      }
+   }
+
+   .cardBody {
+      margin-left: 64px;
+
+      h2 {
+         font-size: 1.8rem;
+         text-transform: capitalize;
+         font-weight: 500;
+      }
+
+      h4 {
+         font-size: 1.6rem;
+         font-weight: 400;
+         text-align: left;
+         color: #c7c9d1;
+      }
+   }
+
+   .price {
+      margin-left: auto;
+   }
+}

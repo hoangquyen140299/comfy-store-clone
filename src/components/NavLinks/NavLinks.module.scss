@@ -1,0 +1,29 @@
+.item {
+   a {
+      display: block;
+      width: 100%;
+   }
+}
+
+.itemLink {
+   text-transform: capitalize;
+   text-decoration: none;
+   padding: 4px 12px;
+
+   &:global.active {
+      padding: 4px 12px;
+      color: #c7c9d1;
+      background-color: #021431;
+      border-radius: 4px;
+   }
+}
+
+@media (min-width: 1024px) {
+   .itemLink {
+      padding: 21px 16px;
+
+      &:global.active {
+         padding: 8px 16px;
+      }
+   }
+}

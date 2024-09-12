@@ -1,0 +1,61 @@
+.wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 32px;
+   padding-bottom: 20px;
+   border-bottom: 1px solid #e2e8f4;
+
+   h4 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #394e6a;
+   }
+
+   .box {
+      display: flex;
+      -moz-column-gap: 8px;
+      column-gap: 8px;
+   }
+
+   .btn {
+      font-size: 2rem;
+      height: 32px;
+      width: 32px;
+      border-radius: 9999px;
+      padding: 0;
+      border-width: 1px;
+      color: currentColor;
+      outline-color: currentColor;
+      border-color: transparent;
+      background-color: transparent;
+
+      &:hover {
+         background-color: #394e6a33;
+      }
+   }
+
+   .layout {
+      --p: 212 100% 51%;
+      --tw-border-opacity: 1;
+      border-color: hsl(var(--p) / var(--tw-border-opacity));
+      --tw-bg-opacity: 1;
+      background-color: hsl(var(--p) / var(--tw-bg-opacity));
+      --tw-text-opacity: 1;
+      color: hsl(var(--pc) / var(--tw-text-opacity));
+      outline-color: hsl(var(--p) / 1);
+
+      --pc: 231 100% 93%;
+      --tw-text-opacity: 1;
+      color: hsl(var(--pc) / var(--tw-text-opacity));
+      &:hover {
+         background-color: #0069e0;
+      }
+   }
+}
+
+.title {
+   margin-top: 64px;
+   font-size: 2.4rem;
+   font-weight: 400;
+}

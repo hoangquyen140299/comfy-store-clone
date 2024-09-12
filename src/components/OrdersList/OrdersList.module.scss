@@ -1,0 +1,65 @@
+.wrapper {
+   margin-top: 32px;
+}
+
+.total {
+   font-size: 1.6rem;
+   font-weight: 400;
+   text-align: left;
+   margin-bottom: 16px;
+   text-transform: capitalize;
+}
+
+.container {
+   overflow-x: auto;
+}
+
+.table {
+   display: table;
+   position: relative;
+   width: 100%;
+   text-align: left;
+   font-size: 1.4rem;
+   line-height: 2rem;
+   border-radius: 16px;
+   border-collapse: collapse;
+
+   thead {
+      border-bottom: 1.5px solid #f0f6ff;
+      text-transform: capitalize;
+
+      th {
+         font-size: 1.2rem;
+         color: #394e6a99;
+      }
+   }
+
+   tbody {
+      font-size: 1.4rem;
+      color: #394e6a;
+   }
+
+   th,
+   td {
+      padding: 8px 8px;
+      vertical-align: middle;
+   }
+
+   tr.active,
+   tr:nth-child(even),
+   tr.active:nth-child(even) {
+      background-color: #f0f6ff;
+   }
+
+   tr > th:last-child,
+   tr > td:last-child {
+      display: none;
+   }
+}
+
+@media (min-width: 768px) {
+   th,
+   td {
+      padding: 12px 16px;
+   }
+}

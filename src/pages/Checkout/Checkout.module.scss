@@ -1,0 +1,12 @@
+.container {
+   margin-top: 32px;
+   display: grid;
+   align-items: flex-start;
+   gap: 32px;
+}
+
+@media (min-width: 768px) {
+   .container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}

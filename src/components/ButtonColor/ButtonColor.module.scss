@@ -1,0 +1,19 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 2;
+    padding: 0 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 2px solid transparent;
+    outline: none;
+}
+
+.active {
+    border-color: #463aa1;
+    outline: 1px solid #463aa1;
+}

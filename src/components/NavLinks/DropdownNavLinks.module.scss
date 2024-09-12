@@ -1,0 +1,14 @@
+.itemLink {
+   text-transform: capitalize;
+   text-decoration: none;
+   min-width: 192px;
+   width: 100%;
+   padding: 4px 12px;
+
+   &:global.active {
+      color: #c7c9d1;
+      padding: 4px 12px;
+      background-color: #021431;
+      border-radius: 4px;
+   }
+}
